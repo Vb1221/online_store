@@ -1,0 +1,88 @@
+.logo img{
+  height: 30px;
+  width: 30px;
+  padding: 1em;
+}
+
+
+.login-form {
+max-width: 300px;
+margin: 0 auto;
+padding: 20px;
+background: #f4f7f8;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+
+.login-form h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+width: 95%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+
+.login-form input[type="submit"] {
+width: 100%;
+padding: 10px;
+background: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.switchForm{
+margin-top: 1em;
+cursor: pointer;
+}
+
+  /* Стилі для форми реєстрації */
+  .register-form {
+    display: none;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .register-form input[type="text"],
+  .register-form input[type="password"],
+  .register-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .register-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .register-form button {
+    margin-top: 1em;
+    cursor: pointer;
+  }

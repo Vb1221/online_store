@@ -1,0 +1,18 @@
+.headDiv{
+display: flex;
+margin-bottom: 3em;
+}
+
+.headDiv img{
+  width: 50%;
+  height: auto;
+}
+
+.infoElement{
+  display: flex;
+
+}
+
+.infoElement h5{
+ margin-left: 5em;
+}

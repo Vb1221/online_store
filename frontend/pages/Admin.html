@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/admin.css">
+  <script src="../scripts/admin.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <a href="../index.html" class="logo"><img src="../img/home.png" alt="icon"></a>
+  <div class="admin-form">
+    <input type="text" class="createType" placeholder="Введіть новий тип товару">
+    <button class="submitCreateNewType">OK</button>
+    <hr>
+    <input type="text" class="createBrand" placeholder="Введіть новий бренд товару">
+    <button class="submitCreateNewBrand">OK</button>
+    <hr>
+
+    <form>
+      <input type="text" class="deviceName" placeholder="Назва" required>
+      <input type="text" class="devicePrice" placeholder="Ціна" required>
+      <select id="typeSelect">
+
+      </select>
+      <select id="brandSelect">
+      </select>
+      <input type="file" class="deviceImg">
+      <button class="descriptionBtn">Додати Опис</button>
+      <div class="descriptionArea">
+
+      </div>
+      <input type="submit" value="Створити" class="createDevice">
+
+    </form>
+    <p class="error-message"></p>
+  </div>
+
+</body>
+</html>
