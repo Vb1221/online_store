@@ -9,18 +9,15 @@
   <link rel="stylesheet" href="styles/index.css">
   <script src="scripts/index.js"></script>
 </head>
-<body class="bg-body-tertiary">
+<body>
   <header class="bg-body-tertiary"> 
     <nav class="navbar navbar-dark container">
       <div class="container-fluid">
         <a href="index.html" class="logo"><img src="img/home.png" alt="icon"></a>
-        <form class="d-flex inputForm" role="search">
-          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Search</button>
-        </form>
+        <div class="typeOfDevice">
+        </div>
         <div>
           <a class="redirectUrl"><img class="prof" src="img/prof.png" alt="icon"></a>
-          <a href="#"><img class="basket" src="img/basket.png" alt="icon"></a>
         </div>
       </div>
     </nav>
@@ -31,13 +28,16 @@
       <span class="close">&times;</span>
       <div class="userData"></div>
       <div class="basketData"></div>
+      <div class="orderDiv">
+        <p class="totalprice"></p>
+        <button class="order">Замовити</button>
+      </div>
       <button class="logoutBtn btn btn-outline-danger">Вийти</button>
     </div>
   </div>
 
 
-  <div class="typeOfDevice container">
-  </div>
+
 <section class="container">
   <div class="allDevice">
 

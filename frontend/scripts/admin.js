@@ -187,4 +187,13 @@ function createDevice(e) {
 
 createDeviceBtn.onclick = createDevice;
 
+let logoutBtn = document.querySelector('.logout')
+
+function logout(){
+  sessionStorage.removeItem('token');
+  window.location.href = '../index.html'
+}
+
+logoutBtn.onclick = logout
+
 }

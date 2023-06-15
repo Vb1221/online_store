@@ -1,0 +1,38 @@
+.orderForm{
+  margin-top: 3em;
+}
+
+.submitOrder{
+  display: flex;
+  margin-top: 3em;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.totalPrice{
+  margin: 0;
+  margin-right: 1em;
+}
+.createOrderBtn{
+  border: none;
+  border-radius: 8px;
+  padding: 5px 15px;
+  color: white;
+  background-color: rgb(1, 62, 19);
+  transition:  background-color 0.3s ease-in-out
+}
+
+.createOrderBtn:hover{
+  background-color: rgb(37, 195, 42);
+}
+
+.userData{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-right: 5em;
+
+}

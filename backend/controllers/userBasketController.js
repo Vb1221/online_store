@@ -7,13 +7,21 @@ class UserBasketController {
    let basketDevice = await BasketDevice.create({basketId, deviceId})
    return res.json(basketDevice)
   }
-async getBasket(req, res, next){
+  async getBasket(req, res, next){
  
     let {basketId} = req.query;
 
     let devices = await BasketDevice.findAndCountAll({where: {basketId}})
     return res.json(devices);
   } 
+  async remove(req, res){
+    const id = req.query; 
+
+    
+    await BasketDevice.destroy({ where: id});
+
+    res.sendStatus(204)
+  }
 }
 
 

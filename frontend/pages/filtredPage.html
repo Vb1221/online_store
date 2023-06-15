@@ -15,13 +15,10 @@
     <nav class="navbar container">
       <div class="container-fluid">
         <a href="../index.html" class="logo"><img src="../img/home.png" alt="icon"></a>
-        <form class="d-flex inputForm" role="search">
-          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Search</button>
-        </form>
+        <div class="typeOfDevice">
+        </div>
         <div>
           <a class="redirectUrl"><img class="prof" src="../img/prof.png" alt="icon"></a>
-          <a><img class="basket" src="../img/basket.png" alt="icon"></a>
         </div>
       </div>
     </nav>
@@ -31,7 +28,11 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="userData"></div>
-
+      <div class="basketData"></div>
+      <div class="orderDiv">
+        <p class="totalprice"></p>
+        <button class="order">Замовити</button>
+      </div>
       <button class="logoutBtn btn btn-outline-danger">Вийти</button>
     </div>
   </div>

@@ -1,3 +1,4 @@
+
 .brandOfDevice{
   float: left;
   width: 10%;
@@ -11,10 +12,6 @@
   text-align: center;
   transition: transform 0.5s ease;
 }
-
-/* .brandOfDevice h6{
-  transition: transform 0.5s ease;
-} */
 
 .brandOfDevice div:hover{
   transform: scale(1.1);
