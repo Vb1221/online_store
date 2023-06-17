@@ -188,4 +188,7 @@ body{
   .prof{
     margin: 1em;
   }
+  .modal-content{
+    width: 100%;
+  }
 }
