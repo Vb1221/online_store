@@ -211,7 +211,7 @@ window.onload = () => {
 
     const basketDeviceImg = document.createElement('img');
     basketDeviceImg.className = 'basketDeviceImg';
-    const path = 'https://backend-znpe.onrender.com/' + deviceData.rows[i].img;
+    const path = 'https://backend-znpe.onrender.com/' + deviceData.img;
     basketDeviceImg.setAttribute('src', path);
     basketDeviceDiv.appendChild(basketDeviceImg);
 
