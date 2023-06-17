@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    let typeUrl = 'http://localhost:5000/api/type'
+    let typeUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/type'
   // створення нового типу товара
   function createNewType(){
     let token = sessionStorage.getItem('token')
