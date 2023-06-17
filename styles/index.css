@@ -177,6 +177,6 @@ body{
 
 @media (max-width: 500px) {
   .headShow {
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important
   }
 }
