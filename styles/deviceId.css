@@ -96,3 +96,27 @@ margin-top: 1em;
 .infoElement h5{
  margin-left: 5em;
 }
+
+
+@media (max-width: 800px){
+  .headDiv{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .headDiv img{
+    margin-left: 0;
+  }
+  .headDiv div{
+    text-align: center;
+  }
+  .infoElement h5:first-child{
+    margin-left: 1em;
+    text-align: start;
+  }
+  .infoElement h5:last-child{
+    margin-right: 1em;
+    text-align: end;
+  }
+  
+}

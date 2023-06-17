@@ -179,4 +179,10 @@ body{
   .headShow {
     flex-wrap: nowrap !important
   }
+  .logo img{
+    margin: 1em;
+  }
+  .prof{
+    margin: 1em;
+  }
 }
