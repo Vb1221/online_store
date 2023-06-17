@@ -174,3 +174,9 @@ body{
 .order:hover{
   background-color: rgb(33, 12, 172);
 }
+
+@media (max-width: 500px) {
+  .headShow {
+    flex-wrap: nowrap;
+  }
+}

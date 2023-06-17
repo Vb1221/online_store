@@ -133,7 +133,7 @@ async function showDevice(data) {
   headDiv.className = 'headDiv';
 
   const deviceImg = document.createElement('img');
-  const path = `../../backend/static/${data.img}`;
+  const path = 'https://backend-znpe.onrender.com/' + deviceData.rows[i].img;
   deviceImg.src = path;
   headDiv.appendChild(deviceImg);
 
@@ -257,7 +257,7 @@ function showDeviceInBasket(deviceData, basketDeviceId) {
 
   const basketDeviceImg = document.createElement('img');
   basketDeviceImg.className = 'basketDeviceImg';
-  const path = `../../backend/static/${deviceData.img}`;
+  const path = 'https://backend-znpe.onrender.com/' + deviceData.rows[i].img;
   basketDeviceImg.setAttribute('src', path);
   basketDeviceDiv.appendChild(basketDeviceImg);
 
