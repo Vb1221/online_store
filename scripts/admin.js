@@ -30,7 +30,7 @@ window.onload = () => {
 
   // створення нового бренду товара
 
- let brandUrl = 'http://localhost:5000/api/brand'
+ let brandUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/brand'
 
   function createNewBrand(){
     let token = sessionStorage.getItem('token')
@@ -165,7 +165,7 @@ function createDevice(e) {
   formData.append('info', JSON.stringify(info));
 
 
-  const deviceUrl = 'http://localhost:5000/api/device';
+  const deviceUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/device';
   let token = sessionStorage.getItem('token')
 
   fetch(deviceUrl, {
