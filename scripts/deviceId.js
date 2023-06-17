@@ -133,7 +133,7 @@ async function showDevice(data) {
   headDiv.className = 'headDiv';
 
   const deviceImg = document.createElement('img');
-  const path = 'https://backend-znpe.onrender.com/' + deviceData.rows[i].img;
+  const path = 'https://backend-znpe.onrender.com/' + deviceData.rows.img;
   deviceImg.src = path;
   headDiv.appendChild(deviceImg);
 
