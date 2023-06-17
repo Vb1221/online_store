@@ -29,7 +29,7 @@ window.onload = () => {
     let userNameLogin = document.querySelector('.userNameLogin').value
     let passwordLogin = document.querySelector('.passwordLogin').value
 
-    const loginUrl = 'http://localhost:5000/api/user/login'
+    const loginUrl = 'https://backend-znpe.onrender.com/api/user/login'
 
     let loginData = {
       username: userNameLogin,
@@ -59,7 +59,7 @@ window.onload = () => {
       .catch(function(error) {
         // Обробка помилки
         console.error(error);
-        // alert('wrong user name or password')
+        alert('wrong user name or password')
       });
 
   })
@@ -77,7 +77,7 @@ window.onload = () => {
       password: passInput,
       email: emailInput
     }
-    const registrationUrl = 'http://localhost:5000/api/user/registration'
+    const registrationUrl = 'https://backend-znpe.onrender.com/api/user/registration'
 
     fetch(registrationUrl, {
       method: 'POST',

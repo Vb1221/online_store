@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    let typeUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/type'
+    let typeUrl = 'https://backend-znpe.onrender.com/api/type'
   // створення нового типу товара
   function createNewType(){
     let token = sessionStorage.getItem('token')
@@ -30,7 +30,7 @@ window.onload = () => {
 
   // створення нового бренду товара
 
- let brandUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/brand'
+ let brandUrl = 'https://backend-znpe.onrender.com/api/brand'
 
   function createNewBrand(){
     let token = sessionStorage.getItem('token')
@@ -165,7 +165,7 @@ function createDevice(e) {
   formData.append('info', JSON.stringify(info));
 
 
-  const deviceUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/device';
+  const deviceUrl = 'https://backend-znpe.onrender.com/api/device';
   let token = sessionStorage.getItem('token')
 
   fetch(deviceUrl, {

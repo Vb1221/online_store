@@ -2,7 +2,7 @@
 window.onload = () => {
   function getBasket() {
     let basketId = sessionStorage.getItem('basketId');
-    const basketUrl = `http://localhost:5000/api/basket?basketId=${basketId}`;
+    const basketUrl = `https://backend-znpe.onrender.com/api/basket?basketId=${basketId}`;
     fetch(basketUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -14,7 +14,7 @@ window.onload = () => {
     for (let i = 0; i < data.rows.length; i++) {
       let deviceId = data.rows[i].deviceId;
       const basketDeviceId = data.rows[i].id;
-      const deviceUrl = `http://localhost:5000/api/device/${deviceId}`;
+      const deviceUrl = `https://backend-znpe.onrender.com/api/device/${deviceId}`;
       fetch(deviceUrl)
         .then((response) => response.json())
         .then((deviceData) => {
@@ -53,7 +53,7 @@ window.onload = () => {
     deleteBtn.addEventListener('click', (e) => {
       e.preventDefault();
       const id = basketDeviceId;
-      const deleteUrl = `http://localhost:5000/api/basket/delete?id=${id}`;
+      const deleteUrl = `https://backend-znpe.onrender.com/api/basket/delete?id=${id}`;
 
       fetch(deleteUrl, {
         method: 'DELETE',

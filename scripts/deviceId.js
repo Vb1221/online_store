@@ -14,7 +14,7 @@ profBtn.addEventListener('click', function() {
   function openModal(){
   const redirectBtn = document.querySelector('.redirectUrl');
   const token = sessionStorage.getItem('token');
-  const checkUrl = 'http://localhost:5000/api/user/auth';
+  const checkUrl = 'https://backend-znpe.onrender.com/api/user/auth';
 
   if (!token) {
     redirectBtn.setAttribute('href', 'login.html');
@@ -42,7 +42,7 @@ profBtn.addEventListener('click', function() {
 }
 //
 
-const typeUrl = 'http://localhost:5000/api/type';
+const typeUrl = 'https://backend-znpe.onrender.com/api/type';
 const typeOfDevices = document.querySelector('.typeOfDevice');
 
 function getDeviceType(typeUrl) {
@@ -114,7 +114,7 @@ function showModalWindow(userData) {
 
 async function getBasket() {
   let token = sessionStorage.getItem('token');
-  const authUrl = 'http://localhost:5000/api/user/auth';
+  const authUrl = 'https://backend-znpe.onrender.com/api/user/auth';
   try {
     const response = await fetch(authUrl, {
       headers: {
@@ -183,7 +183,7 @@ async function addDevice() {
   buyBtn.classList.add('clicked');
   let token = sessionStorage.getItem('token')
   if(token){
-    const createUrl = 'http://localhost:5000/api/basket/create';
+    const createUrl = 'https://backend-znpe.onrender.com/api/basket/create';
     const getBasketId = sessionStorage.getItem('basketId');
     const getDeviceId = sessionStorage.getItem('id');
 
@@ -216,7 +216,7 @@ async function addDevice() {
 let getBasketId = sessionStorage.getItem('basketId');
 
 function getDevicesInBasket() {  
-  const basketUrl = `http://localhost:5000/api/basket?basketId=${getBasketId}`;
+  const basketUrl = `https://backend-znpe.onrender.com/api/basket?basketId=${getBasketId}`;
 
   fetch(basketUrl)
     .then(response => response.json())
@@ -225,7 +225,7 @@ function getDevicesInBasket() {
 
       for (let i = 0; i < data.rows.length; i++) {
         const deviceId = data.rows[i].deviceId;
-        const deviceUrl = `http://localhost:5000/api/device/${deviceId}`;
+        const deviceUrl = `https://backend-znpe.onrender.com/api/device/${deviceId}`;
         const basketDeviceId = data.rows[i].id;
 
         const devicePromise = fetch(deviceUrl)
@@ -279,7 +279,7 @@ function showDeviceInBasket(deviceData, basketDeviceId) {
   deleteBtn.addEventListener('click', async e => {
     e.preventDefault();
     const id = basketDeviceId;
-    const deleteUrl = `http://localhost:5000/api/basket/delete?id=${id}`;
+    const deleteUrl = `https://backend-znpe.onrender.com/api/basket/delete?id=${id}`;
 
     try {
       const response = await fetch(deleteUrl, {
@@ -310,7 +310,7 @@ async function fetchDeviceData(deviceIdUrl) {
 }
 
 const getDeviceId = sessionStorage.getItem('id');
-const deviceIdUrl = `http://localhost:5000/api/device/${getDeviceId}`;
+const deviceIdUrl = `https://backend-znpe.onrender.com/api/device/${getDeviceId}`;
 fetchDeviceData(deviceIdUrl);
 
 function checkToken(){
