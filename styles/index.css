@@ -175,7 +175,7 @@ body{
   background-color: rgb(33, 12, 172);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .headShow {
     flex-wrap: nowrap !important
   }
