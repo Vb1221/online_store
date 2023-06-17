@@ -126,7 +126,8 @@ window.onload = () => {
           deviceDiv.appendChild(devicePrice);
 
           const deviceImg = document.createElement('img');
-          const path = '../backend/static/' + deviceData.rows[i].img;
+          const path = 'https://backend-znpe.onrender.com/' + deviceData.rows[i].img;
+          // const path = '../backend/static/' + deviceData.rows[i].img;
           deviceImg.setAttribute('src', path);
           deviceDiv.appendChild(deviceImg);
 
