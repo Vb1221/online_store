@@ -77,7 +77,7 @@ window.onload = () => {
     });
   }
 
-  const typeUrl = 'http://dpg-ci6gjbmnqqlclfqgq5m0-a/api/type';
+  const typeUrl = 'https://dpg-ci6gjbmnqqlclfqgq5m0-a/api/type';
   const typeOfDevices = document.querySelector('.typeOfDevice');
 
   function getDeviceType(typeUrl) {
