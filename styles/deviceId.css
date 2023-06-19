@@ -118,5 +118,8 @@ margin-top: 1em;
     margin-right: 1em;
     text-align: end;
   }
-  
+  .headShow{
+    margin: 0;
+    position: relative;
+  }
 }

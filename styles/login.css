@@ -12,6 +12,7 @@ padding: 20px;
 background: #f4f7f8;
 border: 1px solid #ccc;
 border-radius: 4px;
+height: 320px;
 }
 
 
@@ -21,29 +22,35 @@ margin-bottom: 20px;
 }
 
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.userNameLogin,
+.passwordLogin{
 width: 95%;
 padding: 10px;
-margin-bottom: 15px;
+margin-bottom: 35px;
 border: 1px solid #ccc;
 border-radius: 4px;
 }
 
 
-.login-form input[type="submit"] {
-width: 100%;
-padding: 10px;
-background: #4CAF50;
-color: #fff;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+.loginBtn{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  color: black;
+  border: 2px solid green;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.loginBtn:hover{
+  background-color: green;
+  
 }
 
 .switchForm{
-margin-top: 1em;
-cursor: pointer;
+  margin-top: 2em;
+  cursor: pointer;
 }
 
   /* Стилі для форми реєстрації */
@@ -55,6 +62,7 @@ cursor: pointer;
     background: #f4f7f8;
     border: 1px solid #ccc;
     border-radius: 4px;
+    height: 350px;
   }
 
   .register-form h2 {
@@ -62,27 +70,43 @@ cursor: pointer;
     margin-bottom: 20px;
   }
 
-  .register-form input[type="text"],
-  .register-form input[type="password"],
-  .register-form input[type="email"] {
+  .regUserName,
+  .regUserPassword,
+  .regUserEmail {
     width: 95%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
 
-  .register-form input[type="submit"] {
+  .submitReg {
     width: 100%;
     padding: 10px;
-    background: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    background: transparent;
+    color: black;
+    border: 2px solid green;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.4s;
+  }
+  .submitReg:hover{
+    background-color: green;
   }
 
   .register-form button {
-    margin-top: 1em;
+    margin-top: 2em;
     cursor: pointer;
   }
+
+  .container{
+    margin: 0 auto;
+    max-width: 60vw;
+  }
+
+@media(max-width: 800px){
+  .container{
+    max-width: 80vw;
+  }
+}
+

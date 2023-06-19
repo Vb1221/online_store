@@ -23,7 +23,7 @@ body{
   flex-wrap: wrap;
   border: solid 1px gray;
   border-radius: 8px;
-  width: 88%;
+  width: 75%;
 }
 
 .typeVariant{
@@ -177,10 +177,14 @@ body{
 
 @media (max-width: 800px) {
   .headShow {
+    margin-top: 6em;
+    position: fixed;
     flex-wrap: nowrap !important
   }
   .typeOfDevice{
     justify-content: center;
+    background-color: #fefefe;
+
   }
   .logo img{
     margin: 1em;
@@ -191,4 +195,8 @@ body{
   .modal-content{
     width: 100%;
   }
+  .allDevice{
+    margin-top: 6em;
+  }
+
 }

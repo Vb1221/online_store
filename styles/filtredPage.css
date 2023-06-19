@@ -36,11 +36,16 @@ section{
 }
 
 @media (max-width: 800px){
+  .deviceName{
+    margin-top: 3em;
+  }
   .brandOfDevice{
     width: 20%;
     position: fixed;
+    margin-top: 1em;
   }
   .allDevice{
     margin-left: 4em;
+    margin-top: 2em;
   }
 }
