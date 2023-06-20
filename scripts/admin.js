@@ -133,7 +133,7 @@ window.onload = () => {
 descriptionBtn.onclick = addDescription
 
 function createDevice(e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   let infoTitle = document.querySelectorAll('.titleDescription')
   let infoDescription = document.querySelectorAll('.description')
