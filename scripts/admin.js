@@ -19,6 +19,7 @@ window.onload = () => {
     .then(response => response.json())
     .then(data => {
      console.log(data)
+     typeInput.innerHTML = ' '
     })
     .catch(error => {
       // Обробка помилки
@@ -49,6 +50,7 @@ window.onload = () => {
     .then(response => response.json())
     .then(data => {
      console.log(data)
+     brandInput.innerHTML = ' '
     })
     .catch(error => {
       // Обробка помилки
