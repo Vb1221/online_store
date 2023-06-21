@@ -2,9 +2,9 @@ window.onload = () => {
 
     let typeUrl = 'https://backend-znpe.onrender.com/api/type'
   // створення нового типу товара
+ 
   function createNewType(){
     let token = sessionStorage.getItem('token')
-
     let typeInput = document.querySelector('.createType').value
     let newType = {name: typeInput}
 
@@ -19,14 +19,13 @@ window.onload = () => {
     .then(response => response.json())
     .then(data => {
      console.log(data)
-     typeInput.innerHTML = ' '
+     alert(`${data.name} створено`)
     })
     .catch(error => {
       // Обробка помилки
       console.log('Сталася помилка при створенні нового типу:', error);
     });
-  }
-
+  }  
   document.querySelector('.submitCreateNewType').onclick = createNewType
 
   // створення нового бренду товара
@@ -50,7 +49,7 @@ window.onload = () => {
     .then(response => response.json())
     .then(data => {
      console.log(data)
-     brandInput.innerHTML = ' '
+     alert(`${data.name} створено`)
     })
     .catch(error => {
       // Обробка помилки
