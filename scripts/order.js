@@ -90,4 +90,48 @@ window.onload = () => {
   }
 
   getBasket();
+
+  function validateData(){
+    let phone = document.getElementById('phone');
+    let city = document.getElementById('address');
+    let mail = document.getElementById('addressNP');
+
+    let phoneReg = /^(050|066|067|068|091|092|093|094|095|096|097|098|099)\d{7}$/;
+    let locationRegex = /^[А-Яа-яії]*\s?[А-Яа-яії]+?\s?[А-Яа-яії]+?\s?[А-Яа-яії]+?\s?[А-Яа-яії]+?$/;
+    let mailRegex = /^\d+$/
+
+
+    phone.addEventListener('input', function(){
+      console.log(1)
+      let number = phone.value
+      if(number.match(phoneReg)){
+        phone.style.borderColor = 'green'
+        phone.style.backgroundColor = '#58d358'
+      }else{
+        phone.style.borderColor = 'red'
+        phone.style.backgroundColor = '#efa4a4'
+      }
+    })
+    city.addEventListener('input', function(){
+      let location = city.value
+      if(location.match(locationRegex)){
+        city.style.borderColor = 'green'
+        city.style.backgroundColor = '#58d358'
+      }else{
+        city.style.borderColor = 'red'
+        city.style.backgroundColor = '#efa4a4'
+      }
+    })
+    mail.addEventListener('input', function(){
+      let mailNum = mail.value
+      if(mailNum.match(mailRegex)){
+        mail.style.borderColor = 'green'
+        mail.style.backgroundColor = '#58d358'
+      }else{
+        mail.style.borderColor = 'red'
+        mail.style.backgroundColor = '#efa4a4'
+      }
+    })
+  }
+  validateData()
 };

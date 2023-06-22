@@ -59,7 +59,7 @@ body{
 }
 .allDevice img{
   width: 240px;
-  height: 190px;
+  height: auto;
   
 }
 .deviceCard h6{

@@ -95,6 +95,7 @@ window.onload = () => {
           const deviceDiv = document.createElement('div');
           deviceDiv.id = deviceData.rows[i].id;
           deviceDiv.className = 'deviceCard';
+          // deviceDiv.classList.add('phoneCard')
 
           const deviceName = document.createElement('h6');
           deviceName.innerHTML = deviceData.rows[i].name;
@@ -320,8 +321,4 @@ window.onload = () => {
 
     }
   }
-    
-  
-
-  
 };

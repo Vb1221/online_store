@@ -36,3 +36,13 @@
   margin-right: 5em;
 
 }
+
+#phone{
+  border-color: transparent;
+  border-radius: 8px;
+}
+
+#phone::placeholder{
+  text-align: center;
+}
+
