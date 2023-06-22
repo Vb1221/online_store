@@ -46,3 +46,11 @@
   text-align: center;
 }
 
+#address{
+  border-color: transparent;
+  border-radius: 8px;
+}
+#addressNP{
+  border-color: transparent;
+  border-radius: 8px;
+}
